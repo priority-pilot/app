@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(215deg,#9086d7cd,#33c7ffa8);
+}
+.container {
+    width: 100%;
+    min-height: 96vh;
+    padding: 10px;
+}
+.info {
+    width: 100%;
+    margin: 0px auto;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+.info img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+.nav {
+    margin: 10px auto 0px;
+    width: 90%;
+    height: 2vi;
+    padding-top: 5px;
+}
+a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: #9086d7;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+    color: hotpink;
+}
+.main {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 50px 40px 100px;
+    border-radius: 20px;
+}
+.main h1 {
+    color: #33c6ff;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items:center;
+}
+#zegar {
+    color: #ccc;
+    margin: 10px;
+    width: 25%;
+    float: left;
+}
+.form{
+    clear: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 15px;
+    font-size: 14px;
+}
+.okreslanie{
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #555;
+    border-radius: 30px;
+    background-color: #edeef0;
+    padding: 15px 40px;
+    display: flex;
+    flex: 1;
+    padding-right: 40px;
+    align-items: center;
+    justify-content: center;
+}
+input[type=radio]{
+    border-radius: 25%;
+    margin-left: 10px;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 16px 60px;
+    background: linear-gradient(215deg,#33c7ffa8, #9086d7cd);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(kolko_puste.svg);
+    background-size: cover;
+    background-position: center;
+    top:8px;
+    left: 8px;
+}
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    color: #555;
+    background-image: url(kolko.svg);
+    text-decoration: line-through;
+}
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover {
+    background: #edeef0;
+}
+.eisenhower {
+    width: 100%;
+    margin: 0px auto;
+}
+.im-ur, .im-nur, .nim-ur, .nim-nur {
+    clear: left;
+    width: 100%;
+    background-color: #ccc;
+    margin: 5px;
+    border-radius: 20px;
+}
+.im-ur:after, .im-nur:after, .nim-ur:after, .nim-nur:after {
+    content: "";
+    display: block;
+    padding-bottom: 25px;
+}
+h3 {
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+.im-ur {
+    background-color: #19ff625c;
+}
+.im-nur {
+    background-color: #e8ff195c;
+}
+.nim-ur {
+    background-color: #ffba195c;
+}
+.nim-nur {
+    background-color: #ff3c195c;
+}
+ul {
+    margin: 0px auto;
+    width: 90%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #666;
+    color: #fff;
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+.about {
+    margin: 100px auto;
+    width: 90%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.about h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: #9086d7;
+    font-weight: bold;
+}
+footer p {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.linki {
+    visibility: hidden;
+}
+.about img {
+    width: 200px;
+    height: 200px;
+    margin-left: 600px;
+}

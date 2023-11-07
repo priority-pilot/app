@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Priority Pilot to aplikacja pozwalająca użytkownikowi sprawnie zarządzać czasem">
+        <meta name="keywords" content="Priority Pilot, aplikacja do zarządzania czasem, metoda Eisenhowera, sposoby na zarządzanie czasem">
+        
+        <title> Priority Pilot </title>
+        <link rel="stylesheet" href="style.css" media="(min-width: 1024px)">
+        <link rel="stylesheet" href="mobile.css" media="(max-width: 1024px)">
+        <script src="zegar.js"></script>
+        <link rel="icon" type="image/png" href="PriorityPilotLogov2.svg">
+    </head>
+    <body onload="odliczanie()">
+       
+        <div class="container">
+            
+            <div class="main"> 
+                <div class="info">
+                    <img src="PriorityPilotLogoZNapisem.svg" alt="logo Priority Pilot">
+                    <div class="nav">
+                        <a href="index.html">Strona główna</a>
+                        <a href="metoda.html">O aplikacji</a>
+                        <a href="aplikacja.html">Aplikacja</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="logo">
+                    <h1>Priority Pilot</h1>
+                    <div id="zegar"></div>
+                </div>
+                
+               
+                <div class="form">
+                    <input type="text" id="pole" placeholder="Podaj czynność">
+                    <button onclick="addTask()"> Zatwierdź </button>
+                </div>
+                <div class="okreslanie">
+                        Podaj ważność: &nbsp;
+                        <input type="radio" id="waznosc" value="Ważne" name="stopien_waznosci">
+                        <label for="wazne" id="wazne">Ważne</label>
+                        <input type="radio" id="niewaznosc" value="Nieważne" name="stopien_waznosci">
+                        <label for="niewazne" id="niewazne">Nieważne</label>
+                </div>
+                <div class="okreslanie">
+                        Podaj pilność: &nbsp;&nbsp;
+                        <input type="radio" id="pilnosc" value="Pilne" name="stopien_pilnosci">
+                        <label for="pilne" id="pilne">Pilne</label>
+                        <input type="radio" id="niepilnosc" value="Niepilne" name="stopien_pilnosci">
+                        <label for="niepilne" id="niepilne">Niepilne</label>
+                </div>
+                
+                <!--<ul id="list-container">
+                   <li class="checked"> Task 1 </li>
+                    <li> Task 2 </li>
+                    <li> Task 3 </li>
+                </ul>-->
+                <div class="eisenhower">
+                    <div class="im-ur">
+                        <h3>1. Ważne i pilne</h3>
+                        <ul id="wazne-pilne"></ul>
+                    </div>
+                    <div class="im-nur">
+                        <h3>2. Ważne, ale niepilne</h3>
+                        <ul id="wazne-niepilne"></ul>
+                    </div>
+                    <div class="nim-ur">
+                        <h3>3. Nieważne, ale pilne</h3>
+                        <ul id="niewazne-pilne"></ul>
+                    </div>
+                    <div class="nim-nur">
+                        <h3>4. Nieważne i niepilne</h3>
+                        <ul id="niewazne-niepilne"></ul>
+                    </div>
+                </div>
+                <script src="script.js"></script>
+            </div>
+        </div>
+        <footer>
+            <div class="linki">
+                
+                <a href="index.html">Strona główna</a>
+                <a href="metoda.html">O aplikacji</a>
+                <a href="aplikacja.html">Aplikacja</a>
+            </div>
+        <p>Priority Pilot &copy;2023 - All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
